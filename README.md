@@ -17,4 +17,5 @@ To do
 ### References
 
 [1] https://github.com/zhaoyuzhi/deepfillv2
+
 [2] https://github.com/ternaus/High-Resolution-Image-Inpainting-GAN
