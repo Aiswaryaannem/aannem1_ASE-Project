@@ -97,8 +97,8 @@ input = torch.rand(10,32,64,64)
 # mask = torch.from_numpy(mask.astype(np.float32)).permute(0, 3, 1, 2).contiguous()
 # patch_fb=cal_patch(32,mask,256)
 # att = compute_attention(input,patch_fb)
-x = torch.eye(1024) # 创建对角矩阵n*n
-att = x.expand((10, 1024, 1024)) # 扩展维度到b维
+x = torch.eye(1024) 
+att = x.expand((10, 1024, 1024)) 
 out = attention_transfer(input, att)
 res = input-out
 print(L1Loss(input,out))
